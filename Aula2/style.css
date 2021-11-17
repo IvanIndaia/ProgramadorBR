@@ -1,5 +1,15 @@
+body {
+    /*
+    background-image: url(./imagens/fundo02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    */
+}
+
 #principal {
     color: red;
+
 }
 
 #titulo {
@@ -8,4 +18,118 @@
 
 .texto_verde {
     color: green;
+}
+
+#cm {
+    background-color: blue;
+    width: 1cm;
+    height: 1cm;
+}
+
+#mm {
+    background-color: red;
+    width: 5mm;
+    height: 5mm;
+}
+
+#in {
+    background-color: blue;
+    width: 1in;
+    height: 1in;
+}
+
+#px {
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}
+
+#pt {
+    background-color: blue;
+    width: 10pt;
+    height: 10pt;
+}
+
+#pc {
+    background-color: red;
+    width: 1pc;
+    height: 1pc;
+}
+
+/*
+html {
+    font-size: 20px;
+}
+*/
+
+.container {
+    width:  50%;
+    background: red;
+
+}
+
+.inside {
+    width: 80%;
+    background: blue;
+
+}
+
+#base {
+    height: 10px;
+    background: red;
+}
+
+#conteiner {
+    background-color: blue;
+    color: white;
+    margin-top: 10px;
+    margin: 10px;
+    padding:  10px;
+}
+
+.borda {
+    border-width: 5px 10px 15px 20px;
+    border-style: solid;
+    border-color: red blue yellow green;
+    border-radius: 5px;
+
+    /*border: 5px dashed blue;*/
+}
+
+.quadrado {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+#body2 {
+    padding: -1%;
+    margin: -1%;
+}
+
+.conteineer {
+    background-color: red;
+    padding: 5px;
+    border: 5px solid blue;
+    margin: 10px;
+}
+
+.content {
+    background-color: #ddd;
+    border: 5px solid green;
+    padding:  5px;
+}
+
+p {
+    color: red;
+    text-align: justify;
+    /*text-transform: uppercase;*/
+    text-indent: 15px; /* Espaço do parágrafo*/
+    /*text-decoration: overline underline;*/
+    letter-spacing: 1.2px;
+    line-height: 19px;
+    text-shadow: 1px 1px rgb(105, 104, 104);
+
+
+
 }
