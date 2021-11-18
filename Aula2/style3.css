@@ -1,0 +1,47 @@
+.links {
+    
+    text-decoration: none;
+    color: #bc2035;
+    /*background: #bc2035;*/
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    border: 2px solid #bc2035;
+    
+}
+
+.links:visited {
+    color: red;
+}
+
+.links:hover {
+    background: #bc2035;
+    color: white;
+    transition: 0.5s;
+}
+
+ul {
+    list-style-image: url("./imagens/ballonSZ.png");
+    list-style-position: inside;
+    margin: 0;
+    padding: 10px;
+    background: #f3e;
+}
+
+ ol {
+    list-style-type: upper-alpha;
+     list-style-position: inside;
+     margin: 0;
+     padding: 10px;
+     background: #59e;
+ }
+
+ li {
+     border: 1px solid;
+     padding: 1px;
+     background-color: yellow;
+     margin:  15px;
+     padding: 5px;
+     border-radius: 5px;
+ }
