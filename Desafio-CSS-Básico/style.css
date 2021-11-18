@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+}
+
+#card {
+    background: url('./imagens/backgorund.png') no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    padding: 1px 20px;
+    margin-top: 10%;
+    box-sizing: border-box;
+
+    /*border: 1px solid white;*/
+
+}
+
+h1 {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+h3 {
+    margin-left: 45px;
+    text-decoration-line: none;
+}
+
+ul {
+    margin-left: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#inst {
+    list-style-image: 
+    url("./imagens/Insta.png");
+}
+
+#twit {
+    list-style-image: 
+    url("./imagens/Twitter.png");
+}
+
+#yout {
+    list-style-image: 
+    url("./imagens/Youtube.png");
+}

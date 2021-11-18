@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+}
+
+h1{
+    padding-left: 20px;
+    font-family: 'Montagu Slab', serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+ul{
+    padding-bottom: 10px;
+}
+
+li{
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Montagu Slab', serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+a.one:link{color: black;}
+a.one:visited{color: black;}
+a.one:hover{color: orange;}
+
+a.two:link{color: black;}
+a.two:visited{color: black;}
+a.two:hover{color: cyan;}
+
+a.three:link{color: black;}
+a.three:visited{color: black;}
+a.three:hover{color: red;}
+
+#container{
+    background-image: url(./images/background.png);
+    background-repeat: no-repeat;
+    margin: 50px;
+    padding: 10px;
+}
+
+#insta{
+    list-style-image: url(./images/Insta.png);
+}
+
+#twt{
+    list-style-image: url(./images/Twitter.png);
+}
+
+#ytb{
+    list-style-image: url(./images/Youtube.png);
+}
