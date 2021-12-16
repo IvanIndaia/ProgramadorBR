@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+    <script>
+        function modificarBKG(t) {
+            t.style.backgroundColor = "red"
+        }
+        function modificarDefault(t) {
+            t.style.backgroundColor = "cornflowerblue"
+        }
+    </script>
+    <style>
+        img {
+            width: 200px;
+            margin-bottom: 25px;
+        }
+    
+        div {
+            display: inline;
+            padding: 10px;
+            font-size: 2rem;
+            background-color: cornflowerblue;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body onload="console.log('Página completamente Carregada')">
+
+    <img src="http://i1.wp.com/gamelogia.com.br/wp-content/uploads/" alt="">
+    <br>
+    <div onmouseover="modificarBKG(this)"
+        onmouseout="modificarDefault(this)">Click</div>
+    
+</body>
+</html>
