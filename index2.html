@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo</title>
+<!--------------------------- Script -------------------------------->
+    <script>
+        function h1Click() {
+            alert("Olá")
+        }
+
+        function changeH1(i) {
+            let h1 = document.getElementsByTagName("h1")[0]
+            h1.innerText = i.value;
+        }
+
+        function hide(){
+            let h1 = document.getElementsByTagName("h1")[0]
+            h1.style.display = "none"
+        }
+    </script>
+<!--------------------------- Style -------------------------------->    
+    <style>
+        div {
+            display: inline-block;
+            padding: 20px;
+            font-size: 2rem;
+            background-color: cornflowerblue;
+            color: white;
+        }
+    </style>
+</head>
+<!--------------------------- Body -------------------------------->
+<body>
+    <!--
+    <h1 onclick="h1Click()">Clique em Mim</h1>
+    <h1>Clique em mim</h1>
+    <input type="text" oninput="changeH1(this)">
+    -->
+    <h1>Clique em mim</h1>
+    <div onclick="hide()">
+        Click
+    </div>
+</body>
+
+</html>
