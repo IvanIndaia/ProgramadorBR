@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+
+
+
+    </style>
+
+    <script>
+        var num = 0
+        var timer
+
+        function atualizarTexto(){
+            let h = document.getElementsByTagName("h1")[0]
+            h.innerHTML += " " + num
+            num++
+        }
+       
+        function iniciar() {
+        //     let h = document.getElementsByTagName("h1")[0]
+        //     h.innerHTML = "Novo Título"
+            
+        //     setTimeout(mudarCor, 3000)           
+        timer = setInterval(atualizarTexto, 1000)
+        let btnIniciar = document.getElementById("btnIni")
+        btnIniciar.style
+        }
+
+        function parar() {
+            clearInterval(timer)        
+        }
+
+        function mudarCor() {
+            let h = document.getElementsByTagName("h1")[0]
+            h.style.color = "blue"
+        }
+
+
+    </script>
+</head>
+
+<body>
+    
+    <h1>Título</h1>
+    <input id="btnIni" onclick="iniciar()" type="submit" value="INICIAR">
+    <input id="btnStp" onclick="parar()" type="submit" value="PARAR">
+
+
+</body>
+
+</html>
