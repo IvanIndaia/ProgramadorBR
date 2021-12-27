@@ -17,13 +17,15 @@
 <body>
 
 
-    <ul id="lista" data-num="25">
+    <ul id="lista" data-num="25" data-id="53">
 
     </ul>
     <script>
 
+        
         let lista = document.getElementById("lista")
-        let num = parseInt(lista.getAttribute("data-num"))
+        lista.dataset.num = "4"
+        let num = parseInt(lista.dataset.num)
 
         console.log(lista.dataset.num)
         let conteudo = ""
