@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            width: 640px;
+            height: 360px;
+        }
+
+        .video {
+            width: 100%;
+        }
+
+        .controle {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            visibility: hidden;
+        }
+
+        .btn {
+            position: relative;
+            top: 80%;
+            width: 60px;
+            padding: 11px;
+            top: 100%;
+            transform: translateY(-120%);
+        }
+
+    </style>
 </head>
+
 <body>
-    <video controls autoplay preload="auto" muted width="450" 
-    poster="Modulo_11/images/WhatsApp Image 2019-12-10 at 13.12.12.jpeg" 
-    src="https://www.youtube.com/watch?v=hHQGn9iGFAI"></video>
+
+    <div class="container">
+        <video id="video1" class="video"  
+        poster="Modulo_11/images/WhatsApp Image 2019-12-10 at 13.12.12.jpeg"
+        src="Modulo_11/images/SIPAT-2.mp4">
+
+        </video>
+
+        <div class="controle"  onmouseover="mostrarMidia()" onmouseout="ocultarMidia()">
+            <img class="btn" onclick="retroceder()" src="Modulo_11/images/back.png" alt="">
+            <img class="btn" onclick="avancar()" src="Modulo_11/images/forward.png" alt="">
+            <img class="btn" onclick="diminuir()" src="Modulo_11/images/menos.png" alt="">
+            <img class="btn" onclick="aumentar()" src="Modulo_11/images/mais.png" alt="">
+            <img class="btn" onclick="pausar()" src="Modulo_11/images/pause.png" alt="">
+            <img class="btn" onclick="play()" src="Modulo_11/images/play.png" alt="">
+            <img class="btn" onclick="stop()" src="Modulo_11/images/stop.png" alt="">
+        </div>
+    </div>
+
+<script src="javascriptMod11.js"></script>
 </body>
+
 </html>
+
+<!-- 
+ <video class="video" controls autoplay preload="auto" muted width="450" 
+    poster="Modulo_11/images/WhatsApp Image 2019-12-10 at 13.12.12.jpeg" 
+    src="https://www.youtube.com/watch?v=hHQGn9iGFAI"></video> 
+-->
