@@ -1,0 +1,26 @@
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+
+    background-color: grey;
+    height: 400px;
+    color: white;
+}
+
+.rect {
+    width: 100px;
+    height: 100px;
+}
+
+.r1 {
+    background-color: red;
+}
+
+.r2 {
+    background-color: blue;
+}
+
+.r3 {
+    background-color: green;
+}
