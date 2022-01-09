@@ -1,0 +1,35 @@
+p::first-line {
+    color: red;
+}
+
+p::first-letter {
+    font-size: 2rem;
+}
+
+h1::first-letter {
+    font-size: 4rem;
+    color: blue;
+}
+
+li {
+    list-style: none;
+    /* list-style-image: url(https://lh3.googleusercontent.com/jUoaTIlBn5ibfQcND2n5OMD6Z7xoqNj-ShHlFR6QuLffLXD5pS8V2eNg1rGlrsRrnDkoQ28O8UHzqzBQKAGY4l1CS2NQSq2SkRScK6FOjl82jppyohK-); */
+    /* margin-left: 300px; */
+}
+
+li::before {
+    content: ' ';
+    /* color: blue; */
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(https://lh3.googleusercontent.com/jUoaTIlBn5ibfQcND2n5OMD6Z7xoqNj-ShHlFR6QuLffLXD5pS8V2eNg1rGlrsRrnDkoQ28O8UHzqzBQKAGY4l1CS2NQSq2SkRScK6FOjl82jppyohK-);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+p::selection {
+    background-color: black;
+    color: white;
+}
