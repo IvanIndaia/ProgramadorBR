@@ -1,15 +1,15 @@
 let usuarios = ["Adriano", "Marcia", "José"]
 
-        function inserirUser(nome) {
-            usuarios.push(nome)
-        }
+function insertUser(nome) {
+    usuarios.push(nome)
+}
 
-        function listarUser(){
-            console.log(usuarios)
-        }
+function listUser(){
+    console.log(usuarios)
+}
 
-        inserirUser("Ivan")
-        listarUser()
+insertUser("Ivan")
+listUser()
         
 
          // let dobro = function (n) {return 2* n}
