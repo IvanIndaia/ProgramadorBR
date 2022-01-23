@@ -7,16 +7,14 @@ h1 {
     /* text-align: center; */
 }
 
-.stage {
-    /* text-align: center; */
-}
-
 .square {
     width: 100px;
     height: 100px;
     background-color: beige;
     border: 1px solid gray;
     display: inline-block;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.452);
+    border-radius: 7px;
 }
 
 .o {
@@ -50,7 +48,7 @@ h1 {
 }
 
 #btnIniciar {
-    background-color: rgb(147, 231, 147);
+    /* background-color: rgb(147, 231, 147); */
     width: 315px;
     margin-bottom: 10px;
     padding: 10px;
@@ -58,8 +56,8 @@ h1 {
     font-family: serif;
 }
 
-#bntIniciar:hover {
-    font-size: 30px;
-    background-color: rgb(236, 18, 127);
+#btnIniciar:hover {
+    background-color: green;
+    color: white;
     transition: 1s;
 }

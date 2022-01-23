@@ -1,3 +1,6 @@
+let jogador1 = ''
+let jogador2 = ''
+
 document.addEventListener('DOMContentLoaded', () => {
 
     let squares = document.querySelectorAll(".square")
@@ -15,7 +18,13 @@ function handleClick(event) {
 
     if (handleMove(position)) {
         setTimeout(() => {
-            alert(" O Jogo Acabou! \n O vencedo foi: Jogador " + (playerTime + 1))
+            if (playerTime == 0) {
+                alert(`O Jogo Acabou! \n O vencedo foi o: ${jogador1}`)
+                zerarTabuleiro()
+            } else {
+                alert(`O Jogo Acabou! \n O vencedo foi o: ${jogador2}`)
+                zerarTabuleiro()
+            }
         }, 10)
     }
     updateSquares(position)
@@ -44,3 +53,21 @@ function updateSquares(position) {
 //     })
 
 // }
+
+function iniciarJogo() {
+    
+    zerarTabuleiro()
+
+    jogador1 = prompt("Digite o nome do Jogador 1")
+    jogador2 = prompt("Digite o nome do Jogador 2")
+    
+}
+
+function zerarTabuleiro() {
+
+    let O = document.querySelectorAll(".o")
+    let X = document.querySelectorAll(".x")
+    
+    O.forEach((classO) => { classO.remove()})
+    X.forEach((classX) => { classX.remove()})
+}
