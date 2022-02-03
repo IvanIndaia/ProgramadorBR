@@ -19,6 +19,7 @@ function inicializeCards(cards) {
     let gameBoard = document.getElementById("gameBoard")
     // console.log(gameBoard)
 
+    gameBoard.innerHTML = ''
     game.cards.forEach(card => {
 
         let cardElement = document.createElement('div')
@@ -61,21 +62,36 @@ function createCardFace(face, card, element) {
 function flipCard() {
 
     if (game.setCard(this.id)) {
+
         this.classList.add("flip")
-        if (game.checkMatch()) {
-            game.clearCards()
-        } else {
 
-            setTimeout(() => {
-
-                let firstCardView = document.getElementById(game.firstCard.id)
-                let secondCardView = document.getElementById(game.secondCard.id)
-
-            
-                firstCardView.classList.remove('flip')
-                secondCardView.classList.remove('flip')
+        if (game.secondCard) {
+            if (game.checkMatch()) {
                 game.clearCards()
-            }, 1000)
+                if (game.checkGameOver()) {
+                    let gameOverLayer = document.getElementById("gameOver")
+                    gameOverLayer.style.display = 'flex'
+                }
+            } else {
+
+                setTimeout(() => {
+
+                    let firstCardView = document.getElementById(game.firstCard.id)
+                    let secondCardView = document.getElementById(game.secondCard.id)
+
+
+                    firstCardView.classList.remove('flip')
+                    secondCardView.classList.remove('flip')
+                    game.unflipCards()
+                }, 1000)
+            }
         }
     }
+}
+
+function restart() {
+    game.clearCards
+    startGame()
+    let gameOverLayer = document.getElementById("gameOver")
+    gameOverLayer.style.display = 'none'
 }

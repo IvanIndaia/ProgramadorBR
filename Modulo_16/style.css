@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120vh;
+    height: 100vh;
     background-color: #c7cdd3;
 }
 
@@ -56,7 +56,14 @@ body {
     background-color: #05c3ff;
     color: 101c2c;
     font-size: 30px;
+    cursor: pointer;
     /* display: none; */
+}
+
+.card_back:hover {
+    background-image: radial-gradient(#e3f4fa, #05c3ff);
+    width: 130px;
+    height: 130px;
 }
 
 
@@ -100,4 +107,8 @@ body {
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
     gap: 20px;
+}
+
+@media screen {
+    
 }
