@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,13 @@
     <link rel="stylesheet" href="style.css">
     <title>Jogo da Memória</title>
 </head>
+
 <body>
-    
-    <div id="gameBoard">
-        <!-- <div id="hn1ap" class="card" data-icon="bootstrap">
+    <div class="interface">
+        <div class="gamer"><h3 id="j1">Jogador 1</h3> <h3 id="jj1">0</h3> </div>
+        <br>
+        <div id="gameBoard">
+            <!-- <div id="hn1ap" class="card" data-icon="bootstrap">
             <div class="card_front">
                 <img class="icon" src="images/boostrap.png" alt="">
             </div>
@@ -19,21 +23,28 @@
                 &lt/&gt
             </div>
         </div> -->
-    </div>
-    
-
-    <div id="gameOver">
-        <div>
-            Parabén, você completou o jogo!
         </div>
-        <button id="restart" onclick="restart()">Jogue novamente</button>
+        <div class="gamer"><h3 id="j2">Jogador 2</h3> <h3 id="jj2">0</h3> </div>
 
+        <div id="gameOver">
+            <div>
+                Parabéns, você completou o jogo!
+            </div>
+            <button id="restart" onclick="restart()">Jogue novamente</button>
+        </div>
+
+        <div id="startMemory">
+            <div>
+                Jogo da Memória!
+            </div>
+            <button id="starter" onclick="starter()"> Iniciar Jogo </button>
+        </div>
     </div>
-    
     <script src="game.js"></script>
     <script src="javaScript.js"></script>
-    
+
 </body>
+
 </html>
 
 
@@ -49,7 +60,7 @@
 
 
 
-    <!-- <div id="hn1ap" class="card" data-icon="bootstrap">
+<!-- <div id="hn1ap" class="card" data-icon="bootstrap">
         <div class="card-front">
             <img class="icon" src="images/javaScript.png" alt="">
         </div>
