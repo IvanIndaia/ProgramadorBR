@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <style>
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="titulo">Esse título é H1</h1>
+
+    <h1 id="sair">Outro título</h1>
+
+    <!-- <script src="jquery/jquery-3.4.1.js"></script> -->
+    <!-- <script src="jquery/jquery-3.4.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        //Primeiros Passos
+
+        //jQuery -----------------
+        // $(".titulo").hide()
+        // let jey = $.noConflict()
+        // jQuery(".titulo").hide()
+
+        // setTimeout (() => {
+        //     jey(".titulo").show()
+        // }, 2000)
+
+        //JQuery Sem jQuery
+        // document.querySelectorAll(".titulo").forEach(ele => {
+        //     ele.style.display = "none"
+        // })
+
+        //Eventos
+        var ent = 0
+        $(".titulo").click(() => {
+
+            if (ent == 0) {
+                $("#sair").css({
+                    color: "red"
+                })
+                ent =1
+            }else {
+                $("#sair").css({
+                    color: "black"
+                })
+                ent = 0
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>

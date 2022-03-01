@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Back</title>
+    <style>
+        #red {
+            width: 500px;
+            height: 500px;
+            margin-top: 10px;
+            background-color: red;
+            display: none;
+            position: absolute;
+        }
+
+        #green {
+            width: 300px;
+            height: 300px;
+            margin-top: 10px;
+            background-color: green;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="button">Hide</button>
+
+    <div id="green"></div>
+    <div id="red"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        // function callBeck(){
+        //     console.log("Green Escondido!!!")
+        // }
+
+        // $("#button").click(() => {
+        //     $("#green").hide(2000, callBeck)
+        // })
+
+
+        $("#button").click(() => {
+            $("#green").hide(2000, function callBeck() {
+                $("#red").show(2000)
+            })
+        })
+
+    </script>
+</body>
+
+</html>

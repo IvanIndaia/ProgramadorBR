@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações</title>
+    <style>
+        #square {
+            width: 500px;
+            height: 500px;
+            margin-top: 10px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="button">Fade Out</button>
+    <div id="square"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        $("#button").click(() => {
+            $("#square").fadeToggle(1000)
+        })
+
+        // var den = 0
+        // $("#button").click(() => {
+        //     if (den == 0) {
+        //         $("#square").fadeOut(1000)
+        //         $("button").text("Fade In")
+        //         den = 1
+        //     } else {
+        //         $("#square").fadeIn(1000)
+        //         $("button").text("Fade Out")
+        //         den = 0
+        //     }
+        // })
+
+
+    </script>
+</body>
+
+</html>
