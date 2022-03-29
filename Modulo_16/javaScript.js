@@ -107,8 +107,7 @@ function flipCard() {
         }
     }
 }
-//O Palmeiras Não Tem Mundial
-                            |7
+
 function restart() {
     game.clearCards
     startGame()
