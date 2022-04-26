@@ -1,0 +1,28 @@
+.btn {
+    cursor: pointer;
+    width: max-content;
+    border-radius: 10px;
+} 
+
+.bg-color1 {
+    background-color: rgb(2, 15, 2);
+    /* color: white; */
+    padding: 5px;
+    display: block;
+}
+
+.bg-color2 {
+    background-color: rgb(73, 18, 8);
+    /* color: white; */
+    padding: 5px;
+    display: block;
+}
+
+.text-color0 {
+    color: white;
+    font-size: 35px;
+}
+
+div {
+    font-size: 50px;
+}
