@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibling</title>
+    <style>
+        /* .div2 {
+            background-color: red;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="container1">
+        <div class="div1" id="div1">Div 1</div>
+        <div class="div2" id="div2">Div 2</div>
+        <div class="div1" id="div3">Div 3</div>
+        <div class="div2" id="div4">Div 4</div>
+        <div class="div1" id="div5">Div 5</div>
+    </div>
+    <div id="container2">
+        <div class="div2" id="div6">Div 6</div>
+        <div class="div1" id="div7">Div 7</div>
+        <div class="div2" id="div8">Div 8</div>
+        <div class="div1" id="div9">Div 9</div>
+        <div class="div2" id="div10">Div 10</div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        
+        // let selected = $(".div2")
+        // let selected = $("#container2").children().filter(".div2")
+        // let selected = $("#container2").children().last()
+        // let selected = $("#container2").children().first()
+        // let selected = $("#container2").children().not("#div8, #div10")
+        let selected = $("#container2").children().eq(1)
+
+        selected.css({
+            "background-color": "gray"
+        })
+
+    </script>
+</body>
+
+</html>
