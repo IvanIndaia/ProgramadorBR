@@ -14,7 +14,7 @@
 
 <body>
 
-    <!-- <div class="container mt-5 p-5">
+    <div class="container mt-5 p-5">
 
         <button class="btn btn-primary" id="meuBotao">Mostrar Toast</button>
         <button class="btn btn-warning" id="meuBotaoEsconder">Esconder Toast</button>
@@ -28,27 +28,8 @@
             </div>
         </div>
 
-    </div> -->
-
-
-    <!-- -->
-        <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
-
-<div class="toast-container position-fixed bottom-0 end-0 p-3">
-  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-      <img src="images/Interview Topaz.png" class="rounded me-2" alt="...">
-      <strong class="me-auto">Bootstrap</strong>
-      <small>11 mins ago</small>
-      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
-    <div class="toast-body">
-      Hello, world! This is a toast message.
-    </div>
-  </div>
-</div>
 
-    <!-- -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -62,24 +43,14 @@
 
 
     <script>
-        // $(document).ready(function () {
-        //     $("#meuBotao").click(() => {
-        //         $(".toast").toast('show')
-        //     })
-        //     $("#meuBotaoEsconder").click(() => {
-        //         $(".toast").toast('hide')
-        //     })
-        // })
-
-        const toastTrigger = document.getElementById('liveToastBtn')
-const toastLiveExample = document.getElementById('liveToast')
-if (toastTrigger) {
-  toastTrigger.addEventListener('click', () => {
-    const toast = new bootstrap.Toast(toastLiveExample)
-
-    toast.show()
-  })
-}
+        $(document).ready(function () {
+            $("#meuBotao").click(() => {
+                $(".toast").toast('show')
+            })
+            $("#meuBotaoEsconder").click(() => {
+                $(".toast").toast('hide')
+            })
+        })
     </script>
 </body>
 
