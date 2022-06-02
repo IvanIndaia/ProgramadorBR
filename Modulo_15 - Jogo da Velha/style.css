@@ -61,3 +61,8 @@ h1 {
     color: white;
     transition: 1s;
 }
+
+.square {
+    visibility: hidden;
+    ;
+}

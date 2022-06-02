@@ -56,6 +56,14 @@ function updateSquares(position) {
 
 function iniciarJogo() {
     
+    // let stage = document.getElementsByClassName('.stage')
+    // $('.stage')
+    // stage.
+    let stg  = $('.square')
+    stg.css({
+        "visibility": "visible"
+    })
+
     zerarTabuleiro()
 
     jogador1 = prompt("Digite o nome do Jogador 1")
