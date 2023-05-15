@@ -50,8 +50,40 @@ h2 {
 }
 
 .cartao {
-    border: 1px solid;
+    /* border: 1px solid; */
     padding: 70px 100px;
     margin-top: 50px;
+    border-radius: 20px;
+}
 
+.cartao:hover {
+    box-shadow: 8px 8px 15px 12px rgba(205, 205, 205, 0.25);
+}
+
+.ingredientes {
+    cursor: url("./imagens/carrinho-supermercado.png"), default;
+}
+
+.preparo {
+    cursor: url("./imagens/cake.png"), auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.botao-comprar{
+    background-color: #FF6B28;
+    padding: 16px;
+    border-radius: 20px;
+    color: white;
+}
+
+li{
+    margin-bottom: 14px;
+
+}
+
+.lista-ingredientes{
+    margin-bottom: 50px;
 }
